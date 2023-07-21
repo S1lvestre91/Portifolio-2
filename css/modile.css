@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title-logo{
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--white);
+}.title-logo > span{
+  color: var(--limongreen);
+}
+.header-menu-item{
+  margin: 0.3rem 0;
+  
+}
+.header-menu-item > a{
+  color: var(--white);
+  font-family: 'Poppins' , sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--limongreen);
+  padding: .5rem 11rem;
+
+}
+
+.header-menu-item > a:hover{
+  color: var(--limongreen);
+}
+
+.header {
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+}
+
+#menuB{
+  display: flex;
+}
+#menuBur{
+  width: 2rem;
+}
+
+.header-menu{
+  opacity: 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  gap: .5rem;
+  position: absolute;
+  top: 60px;
+  background-color: black;
+  
+}
+
+
+
+/*Home*/
+containrs-home{
+  
+  padding-top: 3rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.title-section{
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  padding-top: 30px;
+  margin-left: 3rem;
+  border-bottom: 2px solid var(--limon);
+  display: inline-block;
+
+}
+.card-home{
+  margin-top: 8rem;
+  width: 90%;
+  display: flex;
+ /* align-items: center;
+  justify-content: center;*/
+  background-color: var(--grey11);
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 2px 2px var(--whitesmoke);
+}
+.name{
+  color: whitesmoke;
+}
+.test{
+  position: absolute;
+  background-color: var(--grey21);
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  top: 0;
+}
+.dev{
+  color: var(--white);
+  font-size: 2rem;
+  margin-top: -1rem;
+  font-family: "Nunito", sans-serif;
+  
+}
+.title-name{
+  display: block;
+  color: var(--white);
+  font-family: "Nunito", sans-serif;
+  font-size: 3rem;
+  
+  font-weight: 1000;
+  
+}
+.span{
+  color: var(--limongreen);
+}
+.front{
+  font-family: "Nunito", sans-serif;
+  display: block;
+  color: var(--limongreen);
+  margin-left: 4.5rem;
+  margin-top: -1.7rem;
+  font-size: 1rem;
+}
+
+/*projetos*/
+.containrs-projetos{
+  width: 100%;
+  padding: 2rem 0;
+  background-color: silver;
+}
+
+.conteudo-projetos{
+  margin: 0 auto;
+  width: 90%;
+  
+
+}
+.cards{
+  margin: 0 auto;
+ margin-top: 3rem;
+ display: grid;
+ 
+ width: 80%;
+ grid-template-columns: repeat(auto-fit,minmax(50%, auto));
+ 
+}
+.card{
+  padding: 1rem 1.5rem;
+  background-color: var(--grey11);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: .5rem;
+}
+.imgCard{
+  width: 5rem;
+  height: 5rem;
+}
+.desCard{
+  font-size: 1rem;
+  color: var(--white);
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+}
+.titleCard{
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+}
+.btnCard{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--limongreen);
+  padding:.5rem 1.5rem;
+  border-radius: .5rem;
+}
+
+/*Sobre*/
+
+.containrs-sobre{
+  width: 100%;
+  padding: 2rem 0;
+  background-color: black;
+}
+
+.conteudo-sobre{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem auto;
+
+}
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: var(--white);
+}
+.skills{
+  color: var(--white);
+}
+.sobre-img{
+  width: 10rem;
+}
+.sobre-info{
+  margin-top: 2rem;
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sobre-p{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 1rem 0;
+}
+
+.skill-html{
+  height: 1rem;
+  background-color: dimgray;
+  display: flex;
+  margin: .5rem 0;
+
+  
+}
+.skill-html::before{
+  content: "";
+  width: 90%;
+  background-color: var(--limongreen);
+  
+}
+.skill-css{
+  height: 1rem;
+  background-color: dimgray;
+  display: flex;
+  margin: .5rem 0;
+}
+.skill-css::before{
+  content: "";
+  width: 80%;
+  background-color: var(--limongreen);
+}
+.skill-js {
+  height: 1rem;
+  background-color: dimgray;
+  display: flex;
+  margin: .5rem 0;
+}
+
+.skill-js::before {
+  content: "";
+  width: 90%;
+  background-color: var(--limongreen);
+}
+
+
+/*contato*/
+containrs-contato{
+  width: 100%;
+  background-color: silver;
+  padding:  2rem 0;
+}
+.conteudo-contato{
+  margin: 1rem auto;
+  width: 90%;
+}
+.form{
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  width: 80%;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: var(--grey11);
+  border-radius: 1rem;
+}
+.form-item{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.form input{
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--limongreen);
+  outline: none;
+  border: none;
+}
+.form textarea{
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  outline-color: greenyellow;
+  background-color: var(--limongreen);
+  outline: none;
+  border: none;
+}
+.form button{
+  padding: .3rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: var(--limongreen);
+  color:var(--white);
+  border: none;
+  outline: none;
+}
+/*Footer*/
+.content-footer{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.redesociais, .autor ,.contato{
+  width: 80%;
+  
+}
+.imgs{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  
+}
+.contato p{
+  padding-top: .5rem;
+}
